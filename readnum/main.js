@@ -1,6 +1,6 @@
 function numberFormat(input) {
     // data
-    var digit = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mốt"];
+    var digit = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mốt", "lăm"];
     var sub_digit = {
         remain: "lẻ",
         ty: "mươi",
@@ -121,15 +121,17 @@ function numberFormat(input) {
         }
 
         
-        if (d) {  //50
-            if ((c>1)&&(d==1)) {
+        if (d) {  
+            if ((c>1)&&(d==1)) { //31
                 exportStr.unshift(`${digit[10]}`);
             } else if ((c>1)&&(d==0)) {
-                // nothing works here
-            } else {
+                // nothing works here because we have x-ty
+            } else if ((c)&&(d==5)) { // 15 25 35 45
+                exportStr.unshift(`${digit[11]}`);
+            } else { // 33 99 94
                 exportStr.unshift(`${digit[d]}`);
             }
-        } else {
+        } else { //09 01
             if ((!isMultiZero(curDigit)) && (c==0)) exportStr.unshift(`${digit[d]}`);
         }
 
