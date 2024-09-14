@@ -1,3 +1,20 @@
+# ecma javascript 6 (2015)
+## 1. `let` and `const`
+> structure: 
+> ```js
+> let variable = value;
+> const constant = value2;
+> ```
+
+let and const can be used to declare a variable in javascript
+
+### difference
+#### a. scope 
+1. let and const can't be used outside of the codeblock. (eg. `if, else`, `for`and  `{...}`);
+2. let and const don't allow duplicated declarations **under the same codeblock**.
+
+![image](https://github.com/user-attachments/assets/950f0b0b-11fb-469d-b1d0-74573f79e47f)
+
 3. in case of declarations in different codeblocks, the let statement in the latest line will be applied.
 
 ```js
@@ -40,3 +57,7 @@ smth = 120;
 ## 4. javascript destructuring and ...rest
 
 ## 4. classes
+
+
+
+
