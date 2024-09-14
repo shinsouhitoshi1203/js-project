@@ -8,7 +8,7 @@
 
 let and const can be used to declare a variable in javascript
 
-### difference
+### differences
 #### a. scope 
 1. let and const can't be used outside of the codeblock. (eg. `if, else`, `for`and  `{...}`);
 2. let and const don't allow duplicated declarations **under the same codeblock**.
@@ -28,7 +28,7 @@ let and const can be used to declare a variable in javascript
 	// the let statement inside this codeblock isn't applied to it
 }
 ```
-####b. hoisting
+#### b. hoisting
 > hoisting means to put the declaration to the top of codeblock.
 
 both `let` and `const`, unlike `var`, don't support **the hoisting feature**. that means you will have to** declare the variable first**, then assign the value later.
@@ -41,7 +41,7 @@ smth = 120;
 **var's** values and **let's** values are able to be assigned, in the other hand, **const's** values aren't.
 > this only applies to assigning value only. don't be dumb w/ object's case
 
-##2. arrow functions
+## 2. arrow functions
 > structure: 
 > ```js
 > (arguments) => {...}
