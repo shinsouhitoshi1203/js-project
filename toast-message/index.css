@@ -1,0 +1,35 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto sans jp;
+  font-size: 16px;
+  gap: 20px;
+  background: #ffa2a2;
+  flex-wrap: wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 12px 50px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn__warning {
+  background: #00c8ff;
+}
+.btn__error {
+  background: #ff8400;
+}
+
+/*# sourceMappingURL=index.css.map */
