@@ -1,1 +1,1 @@
-window.location.href="./readnum";
+window.location.href="./table.html";
